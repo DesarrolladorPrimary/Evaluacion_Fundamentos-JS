@@ -1,11 +1,11 @@
-// Calcular el promedio de las notas
-export const calcularPromedio = function(notas) {
+// Calcular el promedio de las notas (función declarada)
+export function calcularPromedio(notas) {
   let suma = 0;
   for (let i = 0; i < notas.length; i++) {
     suma += parseFloat(notas[i]);
   }
   return suma / notas.length;
-};
+}
 
 // Determinar nivel de rendimiento según el promedio
 export const nivelRendimiento = function(promedio) {
